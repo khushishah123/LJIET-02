@@ -1,14 +1,26 @@
 import java.util.Scanner;
 
-public class Circle{
-    public static void main(String[] args) {
+public class Circle {
+    final double PI = 3.14; 
+    double radius;
+    double area;
+    double circumference;
+    public void setRadius() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the radius of the circle: ");
-        double radius = sc.nextDouble();
-        final double PI = 3.14; 
-        double circumference = 2 * PI * radius;
-        double area = PI * radius * radius;
-
-        System.out.println("The area of the circle is: " + area);
+        System.out.println("Enter radius : ");
+        radius = sc.nextDouble();
+    }
+    
+    public void getData() {
+        area = PI * radius * radius;
+        circumference = 2 * PI * radius;
+        System.out.println("Circumference : " + circumference);
+        System.out.println("Area : " + area);
+    }
+    
+    public static void main(String[] args) {
+        Circle c1 = new Circle();
+        c1.setRadius();
+        c1.getData();
     }
 }
