@@ -4,7 +4,7 @@ public class Circle {
     private double radius;
     private double area;
     private double circumference;
-    private final double PI = 3.14159;
+    private final double PI = 3.14;
 
     public void setRadius(double radius) {
         this.radius = radius;
