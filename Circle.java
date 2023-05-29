@@ -23,6 +23,10 @@ public class Circle {
     public void displayArea() {
         System.out.println("Area: " + area);
     }
+    
+    public void displayCircumference() {
+        System.out.println("Circumference: " + circumference);
+    }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -33,6 +37,7 @@ public class Circle {
         Circle circle = new Circle();
         circle.setRadius(radius);
         circle.displayArea();
+        circle.displayCircumference();
 
         scanner.close();
     }
